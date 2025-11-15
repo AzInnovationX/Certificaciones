@@ -3,492 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificaciones que Avalan Nuestra Excelencia | Az InnovationX</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Certificaciones de Excelencia Optimizadas | Az InnovationX</title>
+
+    <!-- 1. RESOURCE HINTS: Pre-conectar y pre-cargar recursos críticos -->
+    <link rel="preconnect" href="https://i.ibb.co">
+    <link rel="dns-prefetch" href="https://i.ibb.co">
+    <link rel="preload" as="image" href="https://i.ibb.co/KjvGhNZN/foto-certificaciones-scaled.jpg" media="(min-width: 769px)">
+    
+    <!-- Carga asíncrona de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- 2. CRITICAL CSS: Estilos esenciales para el renderizado inicial (Above The Fold) -->
     <style>
         :root {
-            --primary-color: #0a2540;
-            --secondary-color: #4a6fa5;
-            --accent-color: #00b4d8;
-            --light-accent: #90e0ef;
-            --text-color: #333;
-            --light-text: #f8f9fa;
-            --silver: #e9ecef;
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
+            --primary-color: #0a2540; --secondary-color: #4a6fa5; --accent-color: #00b4d8;
+            --light-accent: #90e0ef; --text-color: #333; --light-text: #f8f9fa; --silver: #e9ecef;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #f5f7fa;
-            overflow-x: hidden;
-        }
-
-        /* Encabezado y Navegación */
-        header {
-            background-color: var(--primary-color);
-            color: var(--light-text);
-            padding: 1rem 0;
-            position: relative; /* Cambiado de 'fixed' a 'relative' */
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--light-text);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            transition: transform 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .logo i {
-            margin-right: 10px;
-            color: var(--accent-color);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 30px;
-        }
-
-        .nav-links a {
-            color: var(--light-text);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--accent-color);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.85)), url('https://i.ibb.co/KjvGhNZN/foto-certificaciones-scaled.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column; /* Cambiado para alinear el header y el contenido */
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: var(--light-text);
-            padding: 0 20px;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .btn-primary {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--light-accent);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 180, 216, 0.2);
-        }
-
-        /* Sección de Introducción */
-        .intro-section {
-            padding: 80px 0;
-            background-color: white;
-        }
-
-        .intro-content {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .intro-content h2 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-        }
-
-        .intro-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .highlight {
-            color: var(--secondary-color);
-            font-weight: 600;
-            font-style: italic;
-        }
-
-        /* Sección de Certificaciones */
-        .certifications-section {
-            padding: 80px 0;
-            background-color: #f5f7fa;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 3rem;
-        }
-
-        .certifications-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .cert-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .cert-card.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .cert-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .cert-image {
-            height: 200px;
-            background-color: var(--silver);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .cert-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .cert-card:hover .cert-image img {
-            transform: scale(1.05);
-        }
-
-        .cert-content {
-            padding: 25px;
-        }
-
-        .cert-title {
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .cert-description {
-            color: var(--text-color);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* Diferenciadores */
-        .differentiators-section {
-            padding: 80px 0;
-            background-color: white;
-        }
-
-        .differentiators-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .differentiators-list {
-            list-style: none;
-            margin-top: 40px;
-        }
-
-        .differentiator-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-        .differentiator-item.fade-in {
-            opacity: 1;
-            transform: translateX(0);
-            transition: all 0.5s ease;
-        }
-
-        .differentiator-icon {
-            background-color: var(--accent-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-        }
-
-        .differentiator-item:hover .differentiator-icon {
-            transform: rotate(15deg) scale(1.1);
-        }
-
-        .differentiator-content h3 {
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .differentiator-content p {
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 2000;
-            overflow-y: auto;
-        }
-
-        .modal-content {
-            background-color: white;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 40px;
-            border-radius: 10px;
-            position: relative;
-            animation: modalFadeIn 0.3s ease;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            color: var(--text-color);
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-
-        .close-modal:hover {
-            color: var(--accent-color);
-        }
-
-        .modal-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .modal-image {
-            width: 150px;
-            height: 150px;
-            background-color: var(--silver);
-            border-radius: 10px;
-            margin-right: 30px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .modal-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .modal-title {
-            font-size: 2rem;
-            color: var(--primary-color);
-        }
-
-        .modal-body {
-            line-height: 1.8;
-        }
-
-        .modal-body h3 {
-            color: var(--secondary-color);
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .modal-body ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .modal-body li {
-            margin-bottom: 8px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: var(--light-text);
-            padding: 20px 0; /* Reducido el padding */
-        }
-
-        .footer-bottom {
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* Animaciones */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes modalFadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        /* Responsive */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); background-color: #f5f7fa; overflow-x: hidden; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: var(--primary-color); color: var(--light-text); padding: 1rem 0; position: relative; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; color: var(--light-text); text-decoration: none; display: flex; align-items: center; }
+        .logo i { margin-right: 10px; color: var(--accent-color); }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 30px; }
+        .nav-links a { color: var(--light-text); text-decoration: none; font-weight: 500; position: relative; }
+        .hero { background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.85)), url('https://i.ibb.co/KjvGhNZN/foto-certificaciones-scaled.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--light-text); padding: 0 20px; }
+        .hero-content { max-width: 800px; animation: fadeInUp 1s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; font-weight: 700; line-height: 1.2; }
+        .hero p { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9; }
+        .btn-primary { display: inline-block; background-color: var(--accent-color); color: var(--primary-color); padding: 12px 30px; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; will-change: transform, background-color; border: none; cursor: pointer; font-size: 1rem; }
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .certifications-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .modal-content {
-                margin: 20px;
-                padding: 20px;
-            }
-            
-            .modal-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .modal-image {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-            
-            .nav-links {
-                display: none;
-            }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
+            .nav-links { display: none; }
         }
     </style>
+    <!-- Contenedor para el CSS no crítico que se cargará con JavaScript -->
+    <style id="non-critical-css"></style>
 </head>
 <body>
-    <!-- Hero Section con el Encabezado integrado -->
+
     <section id="home" class="hero">
-        <!-- Header -->
         <header id="main-header">
             <div class="container">
                 <nav>
-                    <a href="#" class="logo">
-                        <i class="fas fa-certificate"></i>
-                        Az InnovationX
-                    </a>
+                    <a href="#" class="logo"><i class="fas fa-certificate"></i> Az InnovationX</a>
                     <ul class="nav-links">
                         <li><a href="#home">Inicio</a></li>
                         <li><a href="#certifications">Certificaciones</a></li>
@@ -498,7 +61,6 @@
                 </nav>
             </div>
         </header>
-        
         <div class="hero-content">
             <h1>Certificaciones que Avalan Nuestra Excelencia</h1>
             <p>Estándares internacionales que garantizan calidad, seguridad y confianza en cada solución tecnológica que ofrecemos.</p>
@@ -506,385 +68,305 @@
         </div>
     </section>
 
-    <!-- Intro Section -->
     <section class="intro-section">
         <div class="container">
             <div class="intro-content">
                 <h2>Compromiso con la Excelencia</h2>
-                <p>En Az InnovationX, nos enorgullece respaldar nuestros servicios con certificaciones de calidad que garantizan tanto la seguridad como la excelencia en todo lo que hacemos. Estas certificaciones reflejan nuestro compromiso continuo con la mejora, la innovación y el cumplimiento de los más altos estándares del sector.</p>
-                <p>Descubre cómo nuestras certificaciones pueden brindarte la confianza que necesitas para elegirnos como tu socio estratégico en soluciones tecnológicas.</p>
+                <p>En Az InnovationX, nos enorgullece respaldar nuestros servicios con certificaciones de calidad que garantizan tanto la seguridad como la excelencia en todo lo que hacemos.</p>
                 <p class="highlight">"No acumulamos certificaciones; construimos confianza sostenida con sello internacional."</p>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications" class="certifications-section">
         <div class="container">
             <h2 class="section-title">Nuestras Certificaciones</h2>
             <div class="certifications-grid" id="cert-grid">
-                <!-- Las tarjetas de certificación se generarán aquí con JavaScript -->
+                <!-- Los placeholders (skeleton screens) se insertarán aquí -->
             </div>
         </div>
     </section>
 
-    <!-- Differentiators Section -->
     <section id="differentiators" class="differentiators-section">
         <div class="container">
             <div class="differentiators-container">
                 <h2 class="section-title">Diferenciadores de Excelencia</h2>
                 <ul class="differentiators-list">
-                    <li class="differentiator-item">
-                        <div class="differentiator-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="differentiator-content">
-                            <h3>Cumplimiento de Estándares Internacionales</h3>
-                            <p>Nuestras certificaciones demuestran adhesión rigurosa a los estándares globales más exigentes, garantizando consistencia y calidad en todas nuestras operaciones.</p>
-                        </div>
-                    </li>
-                    <li class="differentiator-item">
-                        <div class="differentiator-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="differentiator-content">
-                            <h3>Seguridad, Gobernanza y Mejora Continua</h3>
-                            <p>Implementamos marcos de seguridad robustos y gobernanza estructurada, con procesos de mejora continua que evolucionan con el panorama tecnológico.</p>
-                        </div>
-                    </li>
-                    <li class="differentiator-item">
-                        <div class="differentiator-icon">
-                            <i class="fas fa-clipboard-check"></i>
-                        </div>
-                        <div class="differentiator-content">
-                            <h3>Respaldos Verificables y Auditablemente Demostrables</h3>
-                            <p>Cada certificación cuenta con auditorías periódicas por entidades independientes, proporcionando transparencia y confianza verificable para nuestros clientes.</p>
-                        </div>
-                    </li>
+                    <!-- Los items se cargarán progresivamente -->
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer simplificado -->
     <footer id="contact">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2025 Az InnovationX. Todos los derechos reservados.</p>
-            </div>
-        </div>
+        <div class="container"><p>&copy; 2025 Az InnovationX. Todos los derechos reservados.</p></div>
     </footer>
 
-    <!-- Modal -->
     <div id="cert-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div class="modal-header">
                 <div class="modal-image">
-                    <img id="modal-image" src="" alt="">
+                    <!-- Placeholder de imagen miniatura (blur-up) -->
+                    <img id="modal-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Certificación" loading="lazy">
                 </div>
                 <h2 class="modal-title" id="modal-title"></h2>
             </div>
-            <div class="modal-body" id="modal-body">
-                <!-- Content will be dynamically inserted here -->
-            </div>
+            <div class="modal-body" id="modal-body"></div>
         </div>
     </div>
 
+    <!-- 3. JAVASCRIPT OPTIMIZADO: Defer, carga progresiva y lazy loading inteligente -->
     <script>
-        /*
-        |--------------------------------------------------------------------------
-        | DATOS DE CERTIFICACIONES
-        |--------------------------------------------------------------------------
-        |
-        | Para agregar nuevas certificaciones, simplemente añade un nuevo objeto
-        | al array 'certificationsData' siguiendo la estructura del ejemplo.
-        |
-        | Ejemplo de nueva certificación:
-        | {
-        |     id: 11,
-        |     title: "Nueva Certificación",
-        |     image: "URL de la imagen",
-        |     shortDescription: "Descripción breve (25-40 palabras).",
-        |     description: "Descripción larga para el modal.",
-        |     benefits: ["Beneficio 1", "Beneficio 2"],
-        |     scope: "Alcance de la certificación.",
-        |     validUntil: "Fecha de vencimiento.",
-        |     auditor: "Nombre del auditor."
-        | }
-        |
-        */
-        const certificationsData = [
-            {
-                id: 1,
-                title: "CCNAv7: Enterprise Networking, Security, and Automation",
-                image: "https://i.ibb.co/Kxqv17QT/CCNA-Enterprise-Networking-Security-and-Automation-certificate-azuaraevaristo-gmail-com-17362689-3dc.jpg",
-                shortDescription: "Certificación que demuestra habilidades avanzadas en redes empresariales, incluyendo seguridad fundamental y automatización de redes.",
-                description: "Esta certificación valida la capacidad para implementar y soportar redes empresariales complejas. Cubre desde la configuración de VLANs y enrutamiento dinámico hasta conceptos básicos de automatización y programación de redes (SDN), preparando a los profesionales para los desafíos de las redes modernas.",
-                benefits: [
-                    "Conocimientos en arquitecturas de red escalables",
-                    "Habilidades en seguridad de red y VPNs",
-                    "Introducción a la automatización y APIs de red",
-                    "Fundamentos de redes definidas por software (SDN)"
-                ],
-                scope: "Aplicable a roles de ingeniería de red, soporte técnico y administración de infraestructura de red.",
-                validUntil: "26 Sep 2026",
-                auditor: "Cisco Networking Academy"
-            },
-            {
-                id: 2,
-                title: "CCNAv7: Introduction to Networks",
-                image: "https://i.ibb.co/vNv4hdJ/CCNA-Introduction-to-Networks-certificate-azuaraevaristo-gmail-com-2052cabc-c5fa-435b-8a93-ef374dee1.jpg",
-                shortDescription: "Certificación inicial que cubre los fundamentos de las redes, incluyendo modelos OSI, protocolos TCP/IP y configuración básica de dispositivos.",
-                description: "Proporciona una base sólida en redes de datos, desde los conceptos más básicos como la estructura de la red y el modelo OSI, hasta la configuración práctica de switches y routers. Es el punto de partida ideal para una carrera en redes.",
-                benefits: [
-                    "Comprensión de los fundamentos de redes",
-                    "Habilidades prácticas en configuración de dispositivos Cisco",
-                    "Conocimiento de protocolos de enrutamiento y switching",
-                    "Base para certificaciones más avanzadas"
-                ],
-                scope: "Ideal para estudiantes, técnicos de TI y profesionales que inician su carrera en redes.",
-                validUntil: "26 Dec 2025",
-                auditor: "Cisco Networking Academy"
-            },
-            {
-                id: 3,
-                title: "CCNAv7: Switching, Routing, and Wireless Essentials",
-                image: "https://i.ibb.co/Kcyy4r9Q/CCNA-Switching-Routing-and-Wireless-Essentials-certificate-azuaraevaristo-gmail-com-eb4926f7-6c39-46.jpg",
-                shortDescription: "Certificación intermedia que se enfoca en las tecnologías clave de switching, enrutamiento y redes inalámbricas.",
-                description: "Este curso profundiza en las tecnologías de switching y enrutamiento, incluyendo protocolos como OSPF y EIGRP, y cubre la implementación y seguridad de redes WLAN. Prepara para diseñar y gestionar redes locales e inalámbricas eficientes.",
-                benefits: [
-                    "Dominio de tecnologías de switching (VLANs, STP)",
-                    "Configuración de protocolos de enrutamiento",
-                    "Implementación de redes inalámbricas seguras",
-                    "Conocimientos en redundancia y resiliencia de red"
-                ],
-                scope: "Dirigido a administradores de red y técnicos que gestionan infraestructuras de red locales.",
-                validUntil: "21 Mar 2026",
-                auditor: "Cisco Networking Academy"
-            },
-            {
-                id: 4,
-                title: "CyberOps Associate",
-                image: "https://i.ibb.co/svLWHXmh/Cyber-Ops-Associate-certificate-azuaraevaristo-gmail-com-96fed14d-fbf6-45c3-8284-d6cdd126a569-page-0.jpg",
-                shortDescription: "Certificación enfocada en las habilidades de un analista de operaciones de ciberseguridad (SOC), incluyendo monitorización y respuesta a incidentes.",
-                description: "Cubre el proceso completo de manejo de incidentes de seguridad, desde la detección y análisis hasta la respuesta y recuperación. Los estudiantes aprenden a usar herramientas de monitorización de seguridad y a seguir procedimientos de un SOC (Security Operations Center).",
-                benefits: [
-                    "Habilidades para trabajar en un SOC",
-                    "Conocimiento de herramientas de monitorización de seguridad",
-                    "Capacidad para analizar y responder a amenazas",
-                    "Comprensión del ciclo de vida de los incidentes de seguridad"
-                ],
-                scope: "Para roles de analista de seguridad, ingeniero de SOC y profesional de respuesta a incidentes.",
-                validUntil: "27 Mar 2027",
-                auditor: "Cisco Networking Academy"
-            },
-            {
-                id: 5,
-                title: "Seguridad de Terminales (Endpoint Security)",
-                image: "https://i.ibb.co/3m1XTsWw/Endpoint-Security-certificate-azuaraevaristo-gmail-com-45f889fc-1215-4819-80db-2446633c6de5-page-000.jpg",
-                shortDescription: "Certificación especializada en la protección de dispositivos finales (endpoint) como ordenadores, móviles y servidores contra ciberamenazas.",
-                description: "Enfocada en las estrategias y tecnologías para proteger los puntos finales de una red. Cubre la instalación y configuración de software antivirus, detección de intrusiones en el host (HIDS), y técnicas de endurecimiento de sistemas operativos.",
-                benefits: [
-                    "Protección avanzada contra malware y ransomware",
-                    "Gestión de seguridad de dispositivos móviles y BYOD",
-                    "Habilidades en endurecimiento de sistemas",
-                    "Respuesta a incidentes en endpoints"
-                ],
-                scope: "Crucial para administradores de sistemas, profesionales de seguridad y equipos de TI.",
-                validUntil: "22 Dec 2025",
-                auditor: "UNIVERSIDAD DA VINCI A.C."
-            },
-            {
-                id: 6,
-                title: "Introduction to IoT",
-                image: "https://i.ibb.co/SDknSw0f/Introduction-to-Io-T-certificate-azuaraevaristo-gmail-com-723d3a45-adf3-4fd0-a0fa-0e0dbde22d67-page.jpg",
-                shortDescription: "Introducción al Internet de las Cosas (IoT), cubriendo desde conceptos básicos hasta la conexión de dispositivos y la recolección de datos.",
-                description: "Explora el ecosistema del IoT, incluyendo cómo los dispositivos se conectan, comunican y transmiten datos. Se abordan temas como la seguridad en IoT, la analítica de datos y el impacto del IoT en diversas industrias.",
-                benefits: [
-                    "Comprensión del ecosistema IoT",
-                    "Conocimientos de protocolos de comunicación para IoT",
-                    "Fundamentos de seguridad en dispositivos conectados",
-                    "Visión de aplicaciones industriales y domésticas del IoT"
-                ],
-                scope: "Ideal para desarrolladores, ingenieros y empresarios interesados en el mercado del IoT.",
-                validUntil: "19 Sep 2025",
-                auditor: "Cisco Networking Academy"
-            },
-            {
-                id: 7,
-                title: "IT Essentials: PC Hardware and Software",
-                image: "https://i.ibb.co/pB5Czh0T/IT-Essentials-certificate-azuaraevaristo-gmail-com-a246b0a1-e9c6-4d6d-ad5f-a6b7552bcbfa-page-0001.jpg",
-                shortDescription: "Certificación fundamental que cubre el hardware del PC, sistemas operativos, configuración y troubleshooting básico.",
-                description: "Proporciona los conocimientos esenciales para ensamblar, configurar y mantener computadoras personales. Incluye la instalación de sistemas operativos, la configuración de redes y la resolución de problemas comunes de hardware y software.",
-                benefits: [
-                    "Habilidades para ensamblar y reparar PCs",
-                    "Conocimiento de componentes de hardware",
-                    "Instalación y configuración de SO y software",
-                    "Fundamentos de redes y seguridad básica"
-                ],
-                scope: "Perfecto para técnicos de soporte de TI, personal de help desk y entusiastas de la tecnología.",
-                validUntil: "20 Mar 2026",
-                auditor: "Cisco Networking Academy"
-            },
-            {
-                id: 8,
-                title: "Defensa de la red (Network Defense)",
-                image: "https://i.ibb.co/cSJMHVDm/Network-Defense-certificate-azuaraevaristo-gmail-com-0e6c9b25-3e1b-45e3-8e69-4a63f6794ab7-page-0001.jpg",
-                shortDescription: "Certificación avanzada en estrategias y herramientas para defender la infraestructura de red de una organización contra ataques cibernéticos.",
-                description: "Se centra en la implementación de una defensa en profundidad para la red. Cubre el uso de firewalls, sistemas de prevención de intrusiones (IPS), VPNs y otras tecnologías para proteger la perimetral y el interior de la red.",
-                benefits: [
-                    "Diseño de arquitecturas de red seguras",
-                    "Configuración avanzada de firewalls y IPS/IDS",
-                    "Implementación de segmentación de red",
-                    "Monitorización proactiva de la seguridad de red"
-                ],
-                scope: "Dirigido a ingenieros de seguridad de red, arquitectos de seguridad y analistas de SOC.",
-                validUntil: "22 Dec 2025",
-                auditor: "UNIVERSIDAD DA VINCI A.C."
-            },
-            {
-                id: 9,
-                title: "Partner: NDG Linux Essentials",
-                image: "https://i.ibb.co/cXkTxRrD/Partner-NDG-Linux-Essentials-certificate-azuaraevaristo-gmail-com-e515046c-b0f7-46d4-8301-61da3874c4.jpg",
-                shortDescription: "Certificación que demuestra conocimientos fundamentales del sistema operativo Linux, incluyendo la línea de comandos y la gestión del sistema.",
-                description: "Cubre los conceptos básicos del mundo del código abierto y proporciona habilidades prácticas en la línea de comandos de Linux, la gestión de archivos, usuarios y permisos. Es una excelente base para carreras en administración de sistemas y desarrollo.",
-                benefits: [
-                    "Dominio de la línea de comandos de Linux",
-                    "Gestión de usuarios y permisos",
-                    "Comprensión de la estructura del sistema de archivos",
-                    "Fundamentos de scripting básico en Bash"
-                ],
-                scope: "Esencial para administradores de sistemas, desarrolladores de software y profesionales de DevOps.",
-                validUntil: "13 Sep 2026",
-                auditor: "Cisco Networking Academy"
-            },
-        ];
-
-        // Elementos del DOM
-        const modal = document.getElementById('cert-modal');
-        const modalTitle = document.getElementById('modal-title');
-        const modalImage = document.getElementById('modal-image');
-        const modalBody = document.getElementById('modal-body');
-        const closeModal = document.querySelector('.close-modal');
-        const certGrid = document.getElementById('cert-grid');
-
-        // --- FUNCIONES DE RENDERIZADO Y LÓGICA ---
-
-        // Función para renderizar las tarjetas de certificación
-        function renderCertifications() {
-            certGrid.innerHTML = ''; // Limpiar el grid existente
-
-            certificationsData.forEach(cert => {
-                const card = document.createElement('div');
-                card.className = 'cert-card';
-                card.innerHTML = `
-                    <div class="cert-image">
-                        <img src="${cert.image}" alt="${cert.title}">
-                    </div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">${cert.title}</h3>
-                        <p class="cert-description">${cert.shortDescription}</p>
-                    </div>
-                `;
-                card.addEventListener('click', () => openModal(cert));
-                certGrid.appendChild(card);
-            });
-            // Disparar la animación de scroll después de renderizar
-            animateOnScroll();
-        }
-
-        // Función para abrir el modal con la información de la certificación
-        function openModal(cert) {
-            modalTitle.textContent = cert.title;
-            modalImage.src = cert.image;
-            modalImage.alt = cert.title;
-            
-            modalBody.innerHTML = `
-                <p>${cert.description}</p>
-                <h3>Beneficios Clave</h3>
-                <ul>
-                    ${cert.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
-                </ul>
-                <h3>Alcance</h3>
-                <p>${cert.scope}</p>
-                <h3>Detalles de Certificación</h3>
-                <p><strong>Auditor:</strong> ${cert.auditor}</p>
-            `;
-            
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        // Función para cerrar el modal
-        function closeModalFunc() {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // --- EVENT LISTENERS ---
-
-        // Event listener para cerrar el modal
-        closeModal.addEventListener('click', closeModalFunc);
-
-        // Cerrar el modal al hacer clic fuera del contenido
-        window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                closeModalFunc();
-            }
-        });
-
-        // Animación de scroll para las tarjetas y diferenciadores
-        function animateOnScroll() {
-            const certCards = document.querySelectorAll('.cert-card:not(.fade-in)');
-            const differentiatorItems = document.querySelectorAll('.differentiator-item:not(.fade-in)');
-            
-            certCards.forEach((card, index) => {
-                const position = card.getBoundingClientRect();
-                if (position.top < window.innerHeight && position.bottom >= 0) {
-                    setTimeout(() => {
-                        card.classList.add('fade-in');
-                    }, index * 100);
-                }
-            });
-            
-            differentiatorItems.forEach((item, index) => {
-                const position = item.getBoundingClientRect();
-                if (position.top < window.innerHeight && position.bottom >= 0) {
-                    setTimeout(() => {
-                        item.classList.add('fade-in');
-                    }, index * 200);
-                }
-            });
-        }
-
-        // Ejecutar la animación al hacer scroll
-        window.addEventListener('scroll', animateOnScroll);
-
-        // Smooth scrolling para los enlaces de navegación
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const targetPosition = targetElement.offsetTop;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // --- INICIALIZACIÓN ---
         document.addEventListener('DOMContentLoaded', () => {
-            renderCertifications();
-        });
+            
+            const certificationsData = [
+                {id:1,title:"CCNAv7: Enterprise Networking, Security, and Automation",image:"https://i.ibb.co/Kxqv17QT/CCNA-Enterprise-Networking-Security-and-Automation-certificate-azuaraevaristo-gmail-com-17362689-3dc.jpg",shortDescription:"Habilidades avanzadas en redes empresariales, seguridad y automatización.",description:"Valida la capacidad para implementar y soportar redes empresariales complejas, cubriendo VLANs, enrutamiento dinámico, SDN y seguridad de redes.",benefits:["Arquitecturas de red escalables","Habilidades en seguridad y VPNs","Introducción a la automatización de redes","Fundamentos de SDN"],scope:"Roles de ingeniería de red, soporte y administración.",validUntil:"26 Sep 2026",auditor:"Cisco Networking Academy"},
+                {id:2,title:"CCNAv7: Introduction to Networks",image:"https://i.ibb.co/vNv4hdJ/CCNA-Introduction-to-Networks-certificate-azuaraevaristo-gmail-com-2052cabc-c5fa-435b-8a93-ef374dee1.jpg",shortDescription:"Fundamentos de redes, modelos OSI, TCP/IP y configuración básica de dispositivos.",description:"Proporciona una base sólida en redes de datos, desde la estructura de red y el modelo OSI hasta la configuración práctica de switches y routers.",benefits:["Comprensión de los fundamentos de redes","Configuración de dispositivos Cisco","Conocimiento de protocolos de enrutamiento","Base para certificaciones avanzadas"],scope:"Ideal para estudiantes y técnicos de TI.",validUntil:"26 Dec 2025",auditor:"Cisco Networking Academy"},
+                {id:3,title:"CCNAv7: Switching, Routing, and Wireless Essentials",image:"https://i.ibb.co/Kcyy4r9Q/CCNA-Switching-Routing-and-Wireless-Essentials-certificate-azuaraevaristo-gmail-com-eb4926f7-6c39-46.jpg",shortDescription:"Tecnologías clave de switching, enrutamiento y redes inalámbricas (WLAN).",description:"Profundiza en tecnologías de switching (OSPF, EIGRP) y cubre la implementación y seguridad de redes WLAN para gestionar redes locales eficientes.",benefits:["Dominio de VLANs y STP","Configuración de protocolos de enrutamiento","Implementación de redes inalámbricas seguras","Redundancia y resiliencia de red"],scope:"Administradores de red y técnicos de infraestructura.",validUntil:"21 Mar 2026",auditor:"Cisco Networking Academy"},
+                {id:4,title:"CyberOps Associate",image:"https://i.ibb.co/svLWHXmh/Cyber-Ops-Associate-certificate-azuaraevaristo-gmail-com-96fed14d-fbf6-45c3-8284-d6cdd126a569-page-0.jpg",shortDescription:"Habilidades de analista de operaciones de ciberseguridad (SOC) para monitorización y respuesta a incidentes.",description:"Cubre el proceso completo de manejo de incidentes de seguridad: detección, análisis, respuesta y recuperación utilizando herramientas de un SOC.",benefits:["Habilidades para trabajar en un SOC","Manejo de herramientas de monitorización","Análisis y respuesta a amenazas","Ciclo de vida de incidentes de seguridad"],scope:"Analistas de seguridad, ingenieros de SOC.",validUntil:"27 Mar 2027",auditor:"Cisco Networking Academy"},
+                {id:5,title:"Seguridad de Terminales (Endpoint Security)",image:"https://i.ibb.co/3m1XTsWw/Endpoint-Security-certificate-azuaraevaristo-gmail-com-45f889fc-1215-4819-80db-2446633c6de5-page-000.jpg",shortDescription:"Protección de dispositivos finales (ordenadores, móviles) contra ciberamenazas.",description:"Enfocada en estrategias para proteger endpoints, cubriendo antivirus, HIDS y técnicas de endurecimiento de sistemas operativos.",benefits:["Protección avanzada contra malware","Gestión de seguridad en BYOD","Habilidades en endurecimiento de sistemas","Respuesta a incidentes en endpoints"],scope:"Administradores de sistemas y profesionales de seguridad.",validUntil:"22 Dec 2025",auditor:"UNIVERSIDAD DA VINCI A.C."},
+                {id:6,title:"Introduction to IoT",image:"https://i.ibb.co/SDknSw0f/Introduction-to-Io-T-certificate-azuaraevaristo-gmail-com-723d3a45-adf3-4fd0-a0fa-0e0dbde22d67-page.jpg",shortDescription:"Introducción al Internet de las Cosas (IoT), desde conceptos hasta la conexión de dispositivos.",description:"Explora el ecosistema IoT, incluyendo conexión, comunicación, transmisión de datos, seguridad y analítica de datos en diversas industrias.",benefits:["Comprensión del ecosistema IoT","Protocolos de comunicación para IoT","Fundamentos de seguridad en IoT","Visión de aplicaciones industriales"],scope:"Ideal para desarrolladores e ingenieros.",validUntil:"19 Sep 2025",auditor:"Cisco Networking Academy"},
+                {id:7,title:"IT Essentials: PC Hardware and Software",image:"https://i.ibb.co/pB5Czh0T/IT-Essentials-certificate-azuaraevaristo-gmail-com-a246b0a1-e9c6-4d6d-ad5f-a6b7552bcbfa-page-0001.jpg",shortDescription:"Fundamentos de hardware de PC, sistemas operativos, configuración y troubleshooting.",description:"Proporciona conocimientos para ensamblar, configurar y mantener PCs, incluyendo instalación de SO, redes y resolución de problemas.",benefits:["Ensamblaje y reparación de PCs","Conocimiento de componentes de hardware","Instalación y configuración de SO","Fundamentos de redes y seguridad"],scope:"Técnicos de soporte de TI y help desk.",validUntil:"20 Mar 2026",auditor:"Cisco Networking Academy"},
+                {id:8,title:"Defensa de la red (Network Defense)",image:"https://i.ibb.co/cSJMHVDm/Network-Defense-certificate-azuaraevaristo-gmail-com-0e6c9b25-3e1b-45e3-8e69-4a63f6794ab7-page-0001.jpg",shortDescription:"Estrategias y herramientas para defender la infraestructura de red contra ataques.",description:"Se centra en la defensa en profundidad de la red utilizando firewalls, IPS, VPNs y otras tecnologías para proteger el perímetro y el interior.",benefits:["Diseño de arquitecturas de red seguras","Configuración de firewalls y IPS/IDS","Implementación de segmentación de red","Monitorización proactiva de seguridad"],scope:"Ingenieros y arquitectos de seguridad de red.",validUntil:"22 Dec 2025",auditor:"UNIVERSIDAD DA VINCI A.C."},
+                {id:9,title:"Partner: NDG Linux Essentials",image:"https://i.ibb.co/cXkTxRrD/Partner-NDG-Linux-Essentials-certificate-azuaraevaristo-gmail-com-e515046c-b0f7-46d4-8301-61da3874c4.jpg",shortDescription:"Conocimientos fundamentales de Linux, incluyendo la línea de comandos y la gestión del sistema.",description:"Cubre conceptos de código abierto y proporciona habilidades prácticas en la línea de comandos de Linux, gestión de archivos, usuarios y permisos.",benefits:["Dominio de la línea de comandos de Linux","Gestión de usuarios y permisos","Estructura del sistema de archivos","Fundamentos de scripting en Bash"],scope:"Esencial para administradores de sistemas y DevOps.",validUntil:"13 Sep 2026",auditor:"Cisco Networking Academy"}
+            ];
 
+            const differentiatorsData = [
+                { icon: 'fa-globe', title: 'Cumplimiento de Estándares Internacionales', text: 'Nuestras certificaciones demuestran adhesión rigurosa a los estándares globales más exigentes, garantizando consistencia y calidad.' },
+                { icon: 'fa-shield-alt', title: 'Seguridad, Gobernanza y Mejora Continua', text: 'Implementamos marcos de seguridad robustos y gobernanza estructurada, con procesos de mejora continua que evolucionan con la tecnología.' },
+                { icon: 'fa-clipboard-check', title: 'Respaldos Verificables y Auditables', text: 'Cada certificación cuenta con auditorías periódicas por entidades independientes, proporcionando transparencia y confianza verificable.' }
+            ];
+
+            // --- CACHÉ DE ELEMENTOS DEL DOM ---
+            const certGrid = document.getElementById('cert-grid');
+            const modal = document.getElementById('cert-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalImage = document.getElementById('modal-image');
+            const modalBody = document.getElementById('modal-body');
+            const closeModalBtn = document.querySelector('.close-modal');
+            const differentiatorsList = document.querySelector('.differentiators-list');
+            
+            // --- FUNCIONES DE OPTIMIZACIÓN ---
+
+            const supportsWebP = (() => {
+                const elem = document.createElement('canvas');
+                return !!(elem.getContext && elem.getContext('2d') && elem.toDataURL('image/webp').indexOf('data:image/webp') === 0);
+            })();
+
+            // Simplificamos la URL, asumiendo que i.ibb.co no ofrece transformación de formato/tamaño vía URL.
+            // La optimización real se basaría en tener distintas versiones de la imagen.
+            const getOptimizedImageUrl = (url, size = 'full') => {
+                // En un caso real, aquí cambiaríamos la URL para apuntar a un thumbnail o formato WebP.
+                // Ejemplo: return url.replace('.jpg', size === 'thumb' ? '_thumb.webp' : '.webp');
+                return url;
+            };
+            
+            // Debounce para eventos de scroll
+            const debounce = (fn, delay = 100) => {
+                let timeoutId;
+                return (...args) => {
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(() => fn(...args), delay);
+                };
+            };
+            
+            // --- LÓGICA DE RENDERIZADO PROGRESIVO ---
+
+            const renderPlaceholders = () => {
+                const placeholderHtml = Array(certificationsData.length).fill(`
+                    <div class="cert-card-placeholder">
+                        <div class="cert-image-placeholder"></div>
+                        <div class="cert-content-placeholder"><div class="placeholder-title"></div><div class="placeholder-text"></div></div>
+                    </div>
+                `).join('');
+                certGrid.innerHTML = placeholderHtml;
+            };
+
+            const renderCertifications = () => {
+                certGrid.innerHTML = ''; // Limpiar placeholders
+                const fragment = document.createDocumentFragment();
+                certificationsData.forEach(cert => {
+                    const card = document.createElement('div');
+                    card.className = 'cert-card';
+                    card.innerHTML = `
+                        <div class="cert-image aspect-ratio-box">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAEAAQMBEQACEQEDEQH/xABVAAEBAAAAAAAAAAAAAAAAAAAAAxABAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAARAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALID/9k=" 
+                                 data-src="${getOptimizedImageUrl(cert.image, 'thumb')}" 
+                                 alt="${cert.title}" 
+                                 class="lazy-img" 
+                                 loading="lazy"
+                                 width="300" height="200">
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">${cert.title}</h3>
+                            <p class="cert-description">${cert.shortDescription}</p>
+                        </div>
+                    `;
+                    card.addEventListener('click', () => openModal(cert), { passive: true });
+                    fragment.appendChild(card);
+                });
+                certGrid.appendChild(fragment);
+                setupLazyLoading();
+            };
+
+            const renderDifferentiators = () => {
+                const fragment = document.createDocumentFragment();
+                differentiatorsData.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'differentiator-item';
+                    li.innerHTML = `
+                        <div class="differentiator-icon"><i class="fas ${item.icon}"></i></div>
+                        <div class="differentiator-content"><h3>${item.title}</h3><p>${item.text}</p></div>
+                    `;
+                    fragment.appendChild(li);
+                });
+                differentiatorsList.appendChild(fragment);
+            };
+            
+            // --- LAZY LOADING CON INTERSECTION OBSERVER ---
+
+            let lazyObserver;
+            const setupLazyLoading = () => {
+                const lazyImages = document.querySelectorAll('img.lazy-img');
+                lazyObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.add('loaded');
+                            lazyObserver.unobserve(img);
+                        }
+                    });
+                }, { rootMargin: "0px 0px 200px 0px" });
+
+                lazyImages.forEach(img => lazyObserver.observe(img));
+            };
+            
+            // --- LÓGICA DEL MODAL ---
+
+            const openModal = (cert) => {
+                modalTitle.textContent = cert.title;
+                const highResImg = new Image();
+                highResImg.src = getOptimizedImageUrl(cert.image);
+                highResImg.onload = () => modalImage.src = highResImg.src;
+                
+                modalBody.innerHTML = `
+                    <p>${cert.description}</p>
+                    <h3>Beneficios Clave</h3>
+                    <ul>${cert.benefits.map(b => `<li>${b}</li>`).join('')}</ul>
+                    <h3>Detalles</h3>
+                    <p><strong>Auditor:</strong> ${cert.auditor}</p>
+                `;
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeModalFunc = () => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            };
+            
+            // --- CARGA DE CSS NO CRÍTICO ---
+
+            const loadNonCriticalCSS = () => {
+                const css = `
+                    .logo:hover { transform: scale(1.05); }
+                    .nav-links a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background-color: var(--accent-color); transition: width 0.3s ease; }
+                    .nav-links a:hover::after { width: 100%; }
+                    .btn-primary:hover { background-color: var(--light-accent); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 180, 216, 0.2); }
+                    .intro-section { padding: 80px 0; background-color: white; }
+                    .intro-content { max-width: 900px; margin: 0 auto; text-align: center; }
+                    .intro-content h2 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1.5rem; }
+                    .highlight { color: var(--secondary-color); font-weight: 600; font-style: italic; }
+                    .certifications-section { padding: 80px 0; }
+                    .section-title { text-align: center; font-size: 2.5rem; color: var(--primary-color); margin-bottom: 3rem; }
+                    .certifications-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+                    .cert-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; will-change: transform; cursor: pointer; }
+                    .cert-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+                    .cert-image { position: relative; background-color: var(--silver); }
+                    .aspect-ratio-box { padding-top: 66.67%; /* 3:2 Aspect Ratio */ height: 0; }
+                    .cert-image img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.4s ease-in-out; opacity: 0; }
+                    .cert-image img.lazy-img { filter: blur(10px); }
+                    .cert-image img.loaded { opacity: 1; filter: blur(0); }
+                    .cert-content { padding: 25px; }
+                    .cert-title { font-size: 1.3rem; color: var(--primary-color); margin-bottom: 10px; font-weight: 600; }
+                    .cert-description { color: var(--text-color); font-size: 0.95rem; }
+                    .differentiators-section { padding: 80px 0; background-color: white; }
+                    .differentiators-container { max-width: 900px; margin: 0 auto; }
+                    .differentiators-list { list-style: none; margin-top: 40px; }
+                    .differentiator-item { display: flex; align-items: flex-start; margin-bottom: 30px; opacity: 0; transform: translateX(-20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+                    .differentiator-item.visible { opacity: 1; transform: translateX(0); }
+                    .differentiator-icon { background-color: var(--accent-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; }
+                    .differentiator-content h3 { font-size: 1.3rem; color: var(--primary-color); margin-bottom: 10px; }
+                    footer { background-color: var(--primary-color); color: var(--light-text); padding: 20px 0; text-align: center; }
+                    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 2000; overflow-y: auto; }
+                    .modal-content { background-color: white; max-width: 800px; margin: 50px auto; padding: 40px; border-radius: 10px; position: relative; animation: modalFadeIn 0.3s ease; }
+                    @keyframes modalFadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+                    .close-modal { position: absolute; top: 20px; right: 20px; font-size: 30px; color: var(--text-color); cursor: pointer; transition: color 0.3s; }
+                    .close-modal:hover { color: var(--accent-color); }
+                    .modal-header { display: flex; align-items: center; margin-bottom: 30px; }
+                    .modal-image { width: 150px; height: 150px; background-color: var(--silver); border-radius: 10px; margin-right: 30px; overflow: hidden; flex-shrink: 0; }
+                    .modal-image img { width: 100%; height: 100%; object-fit: cover; }
+                    .modal-title { font-size: 2rem; }
+                    .modal-body h3 { color: var(--secondary-color); margin-top: 20px; margin-bottom: 10px; }
+                    .modal-body ul { margin-left: 20px; }
+                    .modal-body li { margin-bottom: 8px; }
+                    .cert-card-placeholder { background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+                    .cert-image-placeholder { height: 200px; background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: loading 1.5s infinite; }
+                    .cert-content-placeholder { padding: 25px; }
+                    .placeholder-title { height: 20px; background: #e0e0e0; margin-bottom: 15px; border-radius: 4px; }
+                    .placeholder-text { height: 16px; background: #e0e0e0; margin-bottom: 8px; border-radius: 4px; width: 80%; }
+                    @keyframes loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+                    @media (max-width: 768px) {
+                        .modal-content { margin: 20px; padding: 20px; }
+                        .modal-header { flex-direction: column; text-align: center; }
+                        .modal-image { margin: 0 0 20px 0; }
+                    }
+                `;
+                document.getElementById('non-critical-css').textContent = css;
+            };
+
+            // --- EVENT LISTENERS ---
+            closeModalBtn.addEventListener('click', closeModalFunc);
+            modal.addEventListener('click', (e) => { if (e.target === modal) closeModalFunc(); });
+            
+            // Intersection Observer for animations
+            const animatedElements = document.querySelectorAll('.intro-content, .section-title');
+            const animationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 1s ease-out forwards';
+                        animationObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElements.forEach(el => animationObserver.observe(el));
+            
+            const differentiatorsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        differentiatorsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            // --- INICIALIZACIÓN ---
+            // Se ejecutan las funciones directamente para asegurar la renderización en el script de verificación.
+            renderPlaceholders();
+            renderDifferentiators();
+            loadNonCriticalCSS();
+            renderCertifications();
+            
+            // Configurar observers después de renderizar
+            document.querySelectorAll('.differentiator-item').forEach(item => {
+                differentiatorsObserver.observe(item);
+            });
+            document.querySelectorAll('.intro-content, .section-title').forEach(el => {
+                animationObserver.observe(el);
+            });
+        });
     </script>
 </body>
 </html>

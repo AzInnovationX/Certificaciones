@@ -8,7 +8,9 @@
     <!-- 1. RESOURCE HINTS: Pre-conectar y pre-cargar recursos críticos -->
     <link rel="preconnect" href="https://i.ibb.co">
     <link rel="dns-prefetch" href="https://i.ibb.co">
+    <link rel="preload" as="image" href="https://i.ibb.co/8LthT5FN/Whats-App-Image-2026-07-15-at-10-02-50-PM.jpg" media="all">
     <link rel="preload" as="image" href="https://i.ibb.co/KjvGhNZN/foto-certificaciones-scaled.jpg" media="(min-width: 769px)">
+    <link rel="shortcut icon" href="https://i.ibb.co/8LthT5FN/Whats-App-Image-2026-07-15-at-10-02-50-PM.jpg" type="image/x-icon">
     
     <!-- Carga asíncrona de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
@@ -25,8 +27,9 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         header { background-color: var(--primary-color); color: var(--light-text); padding: 1rem 0; position: relative; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8rem; font-weight: bold; color: var(--light-text); text-decoration: none; display: flex; align-items: center; }
-        .logo i { margin-right: 10px; color: var(--accent-color); }
+        .logo { font-size: 1.8rem; font-weight: bold; color: var(--light-text); text-decoration: none; display: flex; align-items: center; gap: 12px; transition: color 0.3s ease; }
+        .logo img { height: 45px; width: 45px; border-radius: 50%; border: 2px solid var(--accent-color); object-fit: cover; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease; }
+        .logo:hover img { transform: scale(1.1) rotate(5deg); border-color: var(--light-accent); }
         .nav-links { display: flex; list-style: none; }
         .nav-links li { margin-left: 30px; }
         .nav-links a { color: var(--light-text); text-decoration: none; font-weight: 500; position: relative; }
@@ -51,7 +54,10 @@
         <header id="main-header">
             <div class="container">
                 <nav>
-                    <a href="#" class="logo"><i class="fas fa-certificate"></i> Az InnovationX</a>
+                    <a href="#" class="logo">
+                        <img src="https://i.ibb.co/8LthT5FN/Whats-App-Image-2026-07-15-at-10-02-50-PM.jpg" alt="Az InnovationX Logo">
+                        Az InnovationX
+                    </a>
                     <ul class="nav-links">
                         <li><a href="#home">Inicio</a></li>
                         <li><a href="#certifications">Certificaciones</a></li>
